@@ -1,0 +1,10 @@
+server:
+  port: 7002
+eureka:
+  instance:
+    hostname: hmx7002.com
+  client:
+    register-with-eureka: false #是否注册自己
+    fetch-registry: false #为false表示自己为注册中心
+    service-url:
+      defaultZone: http://hmx7001.com:7001/eureka/,http://hmx7003.com:7003/eureka/

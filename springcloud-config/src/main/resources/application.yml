@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: hello-spring-cloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://gitee.com/cszandlcz/springcloud-config.git
+
+server:
+  port: 3344
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://hmx7002.com:7001/eureka/,http://hmx7003.com:7002/eureka/,http://hmx7003.com:7003/eureka/
